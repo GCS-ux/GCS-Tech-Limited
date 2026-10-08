@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCS Tech Limited - Dissiestec Academy</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{background:#f8fafc;color:#1e293b;line-height:1.7}
+.top-banner{background:linear-gradient(90deg,#ff0000,#b30000);color:white;text-align:center;padding:12px 10px;font-weight:900;font-size:13px;position:sticky;top:0;z-index:2000}
+header{background:#fff;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:42px;z-index:1000;box-shadow:0 2px 15px #0001}
+.logo{font-weight:900;color:#0a3d9c}
+.logo span{display:block;font-size:11px;color:#64748b;font-weight:600}
+nav{display:flex;gap:7px;flex-wrap:wrap}
+nav a{padding:8px 13px;border-radius:25px;font-size:11px;font-weight:700;cursor:pointer;border:1px solid #e2e8f0;text-decoration:none;color:#334155;background:#fff}
+nav a.active,nav a:hover{background:#0a3d9c;color:#fff}
+.page{display:none}.page.active{display:block}
+.hero{background:linear-gradient(135deg,#eef2ff,#dbeafe);text-align:center;padding:60px 5%}
+section{padding:30px 5%}
+.container{max-width:1100px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:22px}
+.card h3{color:#0a3d9c}
+.card ul{margin-left:18px;margin-top:8px;font-size:13px}
+.btn{padding:12px 22px;border-radius:12px;border:none;font-weight:800;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-primary{background:#0a3d9c;color:#fff}
+.btn-green{background:#25D366;color:#fff}
+.btn-dark{background:#0f172a;color:#fff}
+.form-box{max-width:620px;margin:auto;background:#fff;border-radius:20px;padding:26px;box-shadow:0 10px 30px #0001}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;margin:6px 0 12px}
+label{font-size:11px;font-weight:800}
+.upload-area{border:2px dashed #94a3b8;border-radius:14px;padding:18px;text-align:center;background:#f8fafc;cursor:pointer}
+footer{text-align:center;background:#0f172a;color:#94a3b8;padding:24px;font-size:11px}
+.price-tag{background:#0a3d9c;color:white;display:inline-block;padding:5px 14px;border-radius:20px;font-size:13px;font-weight:800;margin-top:8px}
+.old{color:#94a3b8;text-decoration:line-through;font-size:13px}
+.new{color:#dc2626;font-weight:900}
+.save-badge{background:#ffcc00;color:#000;padding:4px 10px;border-radius:20px;font-size:10px;font-weight:900}
+.discount-box{background:white;border:2px dashed #dc2626;border-radius:16px;padding:14px;display:inline-block;margin-top:12px}
+</style>
+</head>
+<body>
+
+<div class="top-banner">
+🔥 50% DISCOUNT ON REGISTRATION FOR FIRST 50 ONLY! Old ₦200k → Now ₦100k | Only <span id="slotTop">37</span> Slots Left! 🔥
+</div>
+
+<header>
+<div class="logo">GCS TECH LIMITED<span>DISSIESTEC ACADEMY</span></div>
+<nav>
+<a id="nav-home" class="active" onclick="showPage('home')">Home</a>
+<a id="nav-courses" onclick="showPage('courses')">Courses</a>
+<a id="nav-build" onclick="showPage('build')" style="background:#f59e0b;color:white;border-color:#f59e0b">We Build Websites</a>
+<a id="nav-register" onclick="showPage('register')" style="background:#dc2626;color:white;border-color:#dc2626">Register Now ₦100k 🔥</a>
+</nav>
+</header>
+
+<div id="page-home" class="page active">
+<div class="hero">
+<h1>GCS Tech Limited Academy</h1>
+<p>We Train You + We Build Professional Websites For You</p>
+<div class="discount-box">
+<div><span class="save-badge">FIRST 50 USERS - 50% OFF</span></div>
+<p style="margin-top:6px"><span class="old">Fee: ₦200,000</span> <span class="new" style="font-size:20px">Now ₦100,000</span></p>
+<p style="color:#16a34a;font-weight:800;font-size:13px">✓ You Save ₦100k Today!</p>
+</div>
+<div style="margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+<a class="btn btn-primary" style="background:#dc2626" onclick="showPage('register')">Claim 50% Discount - 09066278521</a>
+<a class="btn btn-green" href="https://whatsapp.com/channel/0029Vb9GNXK1NCrOsLwi5g15" target="_blank">Join WhatsApp Channel</a>
+</div>
+<p style="margin-top:12px;font-size:12px">Contact: 09066278521 | UBA 2056847057</p>
+</div>
+</div>
+
+<div id="page-courses" class="page">
+<section class="container">
+<h2 style="text-align:center">Our 4 Professional Courses - <span class="old">₦200,000</span> <span style="color:#dc2626">Now ₦100k (50% OFF)</span></h2>
+<p style="text-align:center;margin-top:6px"><span class="save-badge">FIRST 50 ONLY - <span class="slotCount">37</span> SLOTS LEFT - Call 09066278521</span></p>
+
+<div class="grid" style="margin-top:20px">
+
+<!-- COURSE 1 WITH ITS LESSON INSIDE -->
+<div class="card" style="border-left:6px solid #0a3d9c">
+<h3>1. Website Development - HTML, CSS, JavaScript</h3>
+<p style="font-size:13px;margin-top:8px"><b>What is Website Development?</b> It is the process of building and maintaining websites like Facebook, Jumia and Google.</p>
+<ul>
+<li><b>HTML:</b> The structure - holds text, images, buttons</li>
+<li><b>CSS:</b> The styling - makes it beautiful with colors and layout</li>
+<li><b>JavaScript:</b> The brain - makes it work when you click and submit</li>
+<li><b>Types:</b> Static, Dynamic, E-commerce, Blog</li>
+</ul>
+<p style="color:#16a34a;font-weight:700;font-size:12px;margin-top:10px">+ 40 more practical lessons inside WhatsApp Channel after registration</p>
+</div>
+
+<!-- COURSE 2 WITH ITS LESSON INSIDE -->
+<div class="card" style="border-left:6px solid #16a34a">
+<h3>2. Creating Games Using Python</h3>
+<p style="font-size:13px;margin-top:8px"><b>What is Python?</b> Powerful beginner-friendly language for games, apps and AI.</p>
+<ul>
+<li><b>Tool:</b> Pygame Library for game windows</li>
+<li>2D Arcade: Snake Game, Tetris</li>
+<li>Puzzle: Sudoku, Word Puzzle</li>
+<li>Adventure & Educational Games</li>
+</ul>
+<p style="color:#16a34a;font-weight:700;font-size:12px;margin-top:10px">+ 35 lessons + 5 complete games to build together</p>
+</div>
+
+<!-- COURSE 3 WITH ITS LESSON INSIDE -->
+<div class="card" style="border-left:6px solid #f59e0b">
+<h3>3. Graphics Design</h3>
+<p style="font-size:13px;margin-top:8px"><b>What is Graphics Design?</b> Art of creating visual content like logos, flyers, posters for businesses.</p>
+<ul>
+<li>Logo Design, Flyer & Poster Design</li>
+<li>Brand Identity & Social Media Design</li>
+<li><b>Tools:</b> Canva, Adobe Photoshop, CorelDraw</li>
+</ul>
+<p style="color:#16a34a;font-weight:700;font-size:12px;margin-top:10px">+ 30 practical projects + freelancing guide</p>
+</div>
+
+<!-- COURSE 4 WITH ITS LESSON INSIDE -->
+<div class="card" style="border-left:6px solid #ef4444">
+<h3>4. Software Development</h3>
+<p style="font-size:13px;margin-top:8px"><b>What is Software Development?</b> Building programs that solve problems like WhatsApp and Opay.</p>
+<ul>
+<li>Mobile Apps, Desktop Software, Web Apps</li>
+<li>Business Software: POS, School Management</li>
+<li><b>Projects:</b> Result System, Supermarket POS, Banking App, Inventory System</li>
+</ul>
+<p style="color:#16a34a;font-weight:700;font-size:12px;margin-top:10px">+ Full training from scratch to advanced</p>
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:25px">
+<a class="btn btn-primary" style="background:#dc2626" onclick="showPage('register')">Register Now - Now ₦100k - 09066278521</a><br><br>
+<a class="btn btn-green" href="https://whatsapp.com/channel/0029Vb9GNXK1NCrOsLwi5g15" target="_blank">Join WhatsApp Channel</a>
+</div>
+
+</section>
+</div>
+
+<div id="page-build" class="page">
+<section class="container">
+<h2 style="text-align:center">We Create Professional Websites For Users</h2>
+<p style="text-align:center;color:#64748b">We will build it for you - Fast and Professional</p>
+<div class="grid" style="margin-top:20px">
+<div class="card"><h3>Business Website</h3><p>For shops, salons, restaurants.</p><span class="price-tag">From ₦150,000</span></div>
+<div class="card"><h3>E-commerce Store</h3><p>Online shop with Paystack.</p><span class="price-tag">From ₦350,000</span></div>
+<div class="card"><h3>School / Church Website</h3><p>With admission, events, result checker.</p><span class="price-tag">From ₦200,000</span></div>
+<div class="card"><h3>Portfolio</h3><p>For freelancers and artists.</p><span class="price-tag">From ₦100,000</span></div>
+</div>
+<div class="form-box" style="margin-top:30px">
+<h3 style="text-align:center">Order Website - WhatsApp: 09066278521</h3>
+<form id="buildForm" style="margin-top:16px">
+<label>YOUR FULL NAME *</label><input id="b_name" required>
+<label>WHATSAPP NUMBER *</label><input id="b_phone" required>
+<label>BUSINESS NAME *</label><input id="b_business" required>
+<label>TYPE OF WEBSITE *</label><select id="b_type" required><option value="">-- Select --</option><option>Business Website</option><option>E-commerce Store</option><option>School Website</option><option>Church Website</option><option>Portfolio</option></select>
+<label>DESCRIBE WHAT YOU WANT *</label><textarea id="b_desc" rows="4" required></textarea>
+<label>BUDGET *</label><select id="b_budget"><option>₦100,000 - ₦150,000</option><option>₦150,000 - ₦250,000</option><option>₦250,000 - ₦350,000</option><option>Above ₦350k</option></select>
+<button type="submit" class="btn btn-dark" style="width:100%;margin-top:10px">Send to WhatsApp: 09066278521</button>
+</form>
+</div>
+</section>
+</div>
+
+<div id="page-register" class="page">
+<section class="container" style="text-align:center">
+<h2>Registration - <span class="old">₦200,000</span> <span style="color:#dc2626">Now ₦100,000</span></h2>
+<p style="background:#ffcc00;color:#000;padding:6px 12px;border-radius:20px;display:inline-block;font-weight:900;font-size:11px;margin-top:8px">FIRST 50 - 50% OFF - Only <span class="slotCount">37</span> Left! WhatsApp: 09066278521</p>
+<div class="form-box" style="text-align:left;margin-top:15px">
+<div style="background:#dc2626;color:#fff;border-radius:12px;padding:16px;text-align:center"><p style="text-decoration:line-through;opacity:0.8">Old Price ₦200,000</p><h3 style="font-size:28px">Now ₦100,000</h3><p>Save ₦100k - First 50 only</p></div>
+<div style="background:#fffbeb;border:2px solid #f59e0b;border-radius:12px;padding:14px;margin:14px 0;text-align:center"><p><b>PAY TO:</b> UBA - 2056847057 - Nwaegeruo Tochuckwu Vesta</p><p style="font-size:12px;color:#dc2626;font-weight:800">Pay ₦100k Now - WhatsApp Channel Link will show after payment</p></div>
+<form id="regForm">
+<label>FULL NAME *</label><input id="fullname" required>
+<label>PHONE *</label><input id="phone" required>
+<label>COURSE *</label><select id="course" required><option value="">Choose</option><option>Website Development</option><option>Python Games</option><option>Graphics Design</option><option>Software Development</option><option>All 4 Courses</option></select>
+<label>ACCOUNT NAME *</label><input id="acctName" required>
+<label>UPLOAD RECEIPT *</label><div class="upload-area" onclick="document.getElementById('screenshot').click()"><span id="uploadText">Upload ₦100k receipt</span><input type="file" id="screenshot" accept="image/*" style="display:none" required></div>
+<button type="submit" class="btn btn-primary" style="width:100%;margin-top:14px;background:#dc2626">Submit & Join Channel</button>
+</form>
+<div id="channelBox" style="display:none;margin-top:20px;padding:18px;background:#dcfce7;border:2px solid #16a34a;border-radius:16px;text-align:center">
+<h3>Discount Claimed! You Saved ₦100k!</h3>
+<p style="margin-top:8px"><b>WhatsApp Channel Link:</b></p>
+<a href="https://whatsapp.com/channel/0029Vb9GNXK1NCrOsLwi5g15" target="_blank" class="btn btn-green" style="margin-top:10px">JOIN WHATSAPP CHANNEL NOW</a><br><br>
+<a id="waLink" href="#" target="_blank" class="btn btn-primary">Send Proof to Admin on WhatsApp - 09066278521</a>
+</div>
+</div>
+</section>
+</div>
+
+<footer>
+© 2026 GCS Tech Limited (Dissiestec Academy) | UBA 2056847057 | Academy: <span class="old">₦200k</span> <b style="color:#ff6666">Now ₦100k (50% OFF)</b><br>
+<a href="https://whatsapp.com/channel/0029Vb9GNXK1NCrOsLwi5g15" style="color:#25D366">WhatsApp Channel: https://whatsapp.com/channel/0029Vb9GNXK1NCrOsLwi5g15</a> | WhatsApp: 09066278521
+</footer>
+
+<script>
+function showPage(n){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+document.getElementById('page-'+n).classList.add('active');
+let nav=document.getElementById('nav-'+n); if(nav) nav.classList.add('active');
+window.scrollTo(0,0);
+}
+document.getElementById('regForm').addEventListener('submit',function(e){
+e.preventDefault();
+const course=document.getElementById('course').value;
+const name=document.getElementById('fullname').value;
+const phone=document.getElementById('phone').value;
+const acct=document.getElementById('acctName').value;
+document.getElementById('channelBox').style.display='block';
+const msg=`NEW REG - 50% OFF CLAIMED%0AName:${name}%0APhone:${phone}%0ACourse:${course}%0AAccount:${acct}%0APaid:N100k (Old N200k) - First 50%0AChannel: https://whatsapp.com/channel/0029Vb9GNXK1NCrOsLwi5g15`;
+const waUrl=`https://wa.me/2349066278521?text=${msg}`;
+document.getElementById('waLink').href=waUrl;
+window.open(waUrl,"_blank");
+setTimeout(()=>{window.open("https://whatsapp.com/channel/0029Vb9GNXK1NCrOsLwi5g15","_blank")},800);
+});
+document.getElementById('buildForm').addEventListener('submit',function(e){
+e.preventDefault();
+const name=document.getElementById('b_name').value;
+const phone=document.getElementById('b_phone').value;
+const business=document.getElementById('b_business').value;
+const type=document.getElementById('b_type').value;
+const desc=document.getElementById('b_desc').value;
+const budget=document.getElementById('b_budget').value;
+const msg=`WEBSITE ORDER%0AName:${name}%0APhone:${phone}%0ABusiness:${business}%0AType:${type}%0ABudget:${budget}%0ADesc:${desc}`;
+window.open(`https://wa.me/2349066278521?text=${msg}`,"_blank");
+});
+let slots=37;
+function updateSlots(){
+ if(slots>5){slots--;document.getElementById('slotTop').innerText=slots;document.querySelectorAll('.slotCount').forEach(el=>el.innerText=slots);}
+}
+setInterval(updateSlots,12000);
+</script>
+</body>
+</html>
